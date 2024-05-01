@@ -1,7 +1,7 @@
 {
     "name": "osmose/pulser-cli",
     "description": "CLI for Pulser wordpress theme",
-    "type": "project",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Pulser\\": "src/"

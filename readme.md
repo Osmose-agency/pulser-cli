@@ -20,6 +20,16 @@ To install Pulser CLI, run the following command:
 composer global require osmose/pulser-cli
 ```
 
+## Configuration
+Configure Pulser CLI by setting up the necessary API tokens and other preferences required for connection to the Pulser repository.
+
+### API Token Setup
+To authenticate with the Pulser repository, developers need to configure their API token. Generate your personal token by visiting the Pulser Software at [pulser.osmose.net](https://pulser.osmose.net) and navigating to the profile section. Ensure you have an account on this platform. Once you have your token, use the following command to set it up:
+```bash
+pulser auth:token <your-token>
+```
+Replace `<your-token>` with the actual token you generated. This step is crucial for gaining access to the Pulser block repository and utilizing the CLI's features.
+
 ## Usage
 After installation, use the following commands based on your needs:
 
@@ -27,16 +37,6 @@ After installation, use the following commands based on your needs:
 - **Check Authentication**: `pulser auth-check`
 - **Create Block**: `pulser create-block`
 - **Import Block**: `pulser import-block`
-
-## Configuration
-Configure Pulser CLI by setting up the necessary API tokens and other preferences required for connection to the Pulser repository.
-
-## API Token Setup
-To authenticate with the Pulser repository, developers need to configure their API token. Generate your personal token by visiting the Pulser Software at [pulser.osmose.net](https://pulser.osmose.net) and navigating to the profile section. Ensure you have an account on this platform. Once you have your token, use the following command to set it up:
-```bash
-pulser auth:token <your-token>
-```
-Replace `<your-token>` with the actual token you generated. This step is crucial for gaining access to the Pulser block repository and utilizing the CLI's features.
 
 ## License
 This project is proprietary software. Unauthorized copying, modification, distribution, or use without explicit permission is prohibited.

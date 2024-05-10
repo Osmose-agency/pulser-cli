@@ -10,15 +10,20 @@ require sprintf('%s/vendor/autoload.php', $root);
 
 use Symfony\Component\Console\Application;
 use Pulser\Commands\AuthenticateCommands;
+use Pulser\Commands\AuthenticateOpenAICommands;
 use Pulser\Commands\AuthenticateCheckCommands;
 use Pulser\Commands\CreateBlockCommands;
 use Pulser\Commands\ImportBlockCommands;
  
 $app = new Application();
 //Auth
+
+
 $app->add(new AuthenticateCommands());
+$app->add(new AuthenticateOpenAICommands());
 $app->add(new AuthenticateCheckCommands());
 
 $app->add(new CreateBlockCommands());
 $app->add(new ImportBlockCommands());
+
 $app->run();

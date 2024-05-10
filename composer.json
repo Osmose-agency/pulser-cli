@@ -13,9 +13,15 @@
     "require": {
         "php": "^8.0",
         "symfony/console": "^6.0|^7.0",
-        "symfony/http-client": "^6.0|^7.0"
+        "symfony/http-client": "^6.0|^7.0",
+        "theodo-group/llphant": "^0.6.8"
     },
     "bin": [
         "bin/pulser"
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
 }

@@ -16,7 +16,7 @@ class OpenAIClient
         $config = new OpenAIConfig();
 
         $config->apiKey = $api_key;
-        $config->model = 'gpt-4-turbo';
+        $config->model = 'gpt-4o';
         $config->modelOptions = $options;
         $chat = new OpenAIChat($config);
 
